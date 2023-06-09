@@ -1,18 +1,18 @@
 [
   {
+    "name": "Elegy for the End",
+    "rating": 5,
+    "type": "weapon",
+    "class": "Bow",
+    "isFeatured": true,
+    "src": "elegy-for-the-end.png"
+  },
+  {
     "name": "Staff of Homa",
     "rating": 5,
     "class": "Polearm",
     "isFeatured": true,
     "src": "staff-of-homa.png",
-    "type": "weapon"
-  },
-  {
-    "name": "Wolf's Gravestone",
-    "rating": 5,
-    "class": "Claymore",
-    "isFeatured": true,
-    "src": "wolfs-gravestone.png",
     "type": "weapon"
   },
   {
@@ -58,6 +58,13 @@
     "src": "skyward-spine.png"
   },
   {
+    "name": "Wolf's Gravestone",
+    "rating": 5,
+    "class": "Claymore",
+    "src": "wolfs-gravestone.png",
+    "type": "weapon"
+  },
+  {
     "name": "Skyward Pride",
     "rating": 5,
     "class": "Claymore",
@@ -79,11 +86,11 @@
     "type": "weapon"
   },
   {
-    "name": "Sacrificial Bow",
+    "name": "Mouun's Moon",
     "rating": 4,
     "class": "Bow",
     "isFeatured": true,
-    "src": "sacrificial-bow.png",
+    "src": "mouun's-moon.png",
     "type": "weapon"
   },
   {
@@ -95,28 +102,64 @@
     "type": "weapon"
   },
   {
-    "name": "Lithic Spear",
+    "name": "Wavebreaker's Fin",
     "rating": 4,
     "class": "Polearm",
     "isFeatured": true,
-    "src": "lithic-spear.png",
+    "src": "wavebreaker's-fin.png",
     "type": "weapon"
   },
   {
-    "name": "Lithic Blade",
+    "name": "Rainslasher",
     "rating": 4,
-    "class": "Claymore",
     "isFeatured": true,
-    "src": "lithic-blade.png",
-    "type": "weapon"
+    "type": "weapon",
+    "class": "Claymore",
+    "src": "rainslasher.png"
   },
   {
-    "name": "Lions Roar",
+    "name": "Sacrificial Sword",
     "rating": 4,
     "class": "Sword",
     "isFeatured": true,
-    "src": "lions-roar.png",
+    "src": "sacrificial-sword.png",
     "type": "weapon"
+  },
+  {
+    "name": "Sara",
+    "element": "Electro",
+    "type": "character",
+    "rating": 4,
+    "id": "749031397492203621",
+    "src": "Sara.png",
+    "percentX": 60
+  },
+  {
+    "name": "Sayu",
+    "element": "Anemo",
+    "type": "character",
+    "rating": 4,
+    "id": "749031317492223611",
+    "percentX": 52,
+    "src": "Sayu.png"
+  },
+  {
+    "name": "Yanfei",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 4,
+    "id": "749031411358288396",
+    "percentX": 53,
+    "src": "Yanfei.png"
+  },
+  {
+    "name": "Rosaria",
+    "element": "Cryo",
+    "type": "character",
+    "rating": 4,
+    "id": "749031449864306720",
+    "percentX": 54,
+    "src": "Rosaria.png"
   },
   {
     "name": "Xinyan",
@@ -241,6 +284,13 @@
     "type": "weapon"
   },
   {
+    "name": "Sacrificial Bow",
+    "rating": 4,
+    "class": "Bow",
+    "src": "sacrificial-bow.png",
+    "type": "weapon"
+  },
+  {
     "name": "The Stringless",
     "rating": 4,
     "class": "Bow",
@@ -290,13 +340,6 @@
     "type": "weapon"
   },
   {
-    "name": "Rainslasher",
-    "rating": 4,
-    "type": "weapon",
-    "class": "Claymore",
-    "src": "rainslasher.png"
-  },
-  {
     "name": "Sacrificial Greatsword",
     "rating": 4,
     "type": "weapon",
@@ -318,10 +361,10 @@
     "type": "weapon"
   },
   {
-    "name": "Sacrificial Sword",
+    "name": "Lions Roar",
     "rating": 4,
     "class": "Sword",
-    "src": "sacrificial-sword.png",
+    "src": "lions-roar.png",
     "type": "weapon"
   },
   {

@@ -11,11 +11,11 @@ const run = async () => {
     const items = [...weapons, ...characters]
     let itemList = `
 Weapon
+ Elegy for the End
+Weapon
  Staff of Homa
 Weapon
- Wolf's Gravestone
-Weapon
-Amos' Bow
+Amos Bow
 Weapon
 Skyward Harp
 Weapon
@@ -27,21 +27,31 @@ Primordial Jade Winged-Spear
 Weapon
 Skyward Spine
 Weapon
+Wolf's Gravestone
+Weapon
 Skyward Pride
 Weapon
 Skyward Blade
 Weapon
 Aquila Favonia
 Weapon
- Sacrificial Bow
+ Mouun's Moon
 Weapon
  The Widsith
 Weapon
- Lithic Spear
+ Wavebreaker's Fin
 Weapon
- Lithic Blade
+ Rainslasher
 Weapon
- Lion's Roar
+ Sacrificial Sword
+Character
+Kujou Sara
+Character
+Sayu
+Character
+Yanfei
+Character
+Rosaria
 Character
 Xinyan
 Character
@@ -71,6 +81,8 @@ Barbara
 Weapon
 Rust
 Weapon
+Sacrificial Bow
+Weapon
 The Stringless
 Weapon
 Favonius Warbow
@@ -85,15 +97,13 @@ Favonius Lance
 Weapon
 Dragon's Bane
 Weapon
-Rainslasher
-Weapon
 Sacrificial Greatsword
 Weapon
 The Bell
 Weapon
 Favonius Greatsword
 Weapon
-Sacrificial Sword
+Lions Roar
 Weapon
 The Flute
 Weapon
@@ -124,7 +134,7 @@ Weapon
 Harbinger of Dawn
 Weapon
 Cool Steel
-`
+    `
     itemList = itemList.split(/\r?\n/).map(s => s.trim()).filter(s => s !== "Character" && s !== "Weapon")
     itemList.pop()
     itemList.shift()
@@ -149,7 +159,8 @@ Cool Steel
       return item
     })
     // let epitome = require('../src/data/wanderlust-invocation.json')
-    const path = p.join(__dirname, '../src/data/epitome-invocation.json')
+    const path = p.join(__dirname, "../src/data/epitome-invocation.json");
+    // const path = p.join(__dirname, "../src/data/moment-of-bloom-2.json");
     // epitome.forEach(item => {
     //   if(item.hasOwnProperty('class')) {
     //     if(!item.hasOwnProperty('type')) {
@@ -158,7 +169,7 @@ Cool Steel
     //   }
     // })
     // console.log(epitome.find(item => item.name === "Dragon's Bane"))
-    fs.writeFileSync(path, JSON.stringify(newDetails))
+    fs.writeFileSync(path, JSON.stringify(newDetails, null, '\t'))
     console.log(newDetails)
   } catch(err) {
     console.log(err)
@@ -168,13 +179,13 @@ Cool Steel
 // run()
 
 const validateImages = async () => {
-  let invitation = require('../src/data/moment-of-bloom.json')
-  let wanderlust = require('../src/data/wanderlust-invocation.json')
+  let invitation = require('../src/data/moment-of-bloom-2.json')
+  // let wanderlust = require('../src/data/wanderlust-invocation.json')
   let epitome = require('../src/data/epitome-invocation.json')
   const weaponPix = await readdir(p.join(__dirname, '../src/assets/images/weapons'))
   const characterPix = await readdir(p.join(__dirname, '../src/assets/images/characters'))
   const pics = [...weaponPix, ...characterPix]
-  const arrs = [invitation, wanderlust, epitome]
+  const arrs = [invitation, epitome]
   arrs.forEach((arr, i) => {
     arr.forEach(item => {
       if (!pics.some(pic => pic === item.src)) {

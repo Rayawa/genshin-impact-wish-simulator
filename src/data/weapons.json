@@ -6,10 +6,22 @@
         "src": "aquila-favonia.png"
     },
     {
+        "name": "Song of Broken Pines",
+        "rating": 5,
+        "class": "Sword",
+        "src": "song-of-broken-pines.png"
+    },
+    {
         "name": "Blackcliff Longsword",
         "rating": 4,
         "class": "Sword",
         "src": "blackcliff-longsword.png"
+    },
+    {
+        "name": "Mitternachts Waltz",
+        "rating": 4,
+        "class": "Bow",
+        "src": "mitternachts-waltz.png"
     },
     {
         "name": "Cool Steel",
@@ -173,6 +185,13 @@
         "type": "weapon",
         "class": "Bow",
         "src": "amos-bow.png"
+    },
+    {
+        "name": "Elegy for the End",
+        "rating": 5,
+        "type": "weapon",
+        "class": "Bow",
+        "src": "elegy-for-the-end.png"
     },
     {
         "name": "Blackcliff Warbow",
@@ -635,5 +654,47 @@
         "rating": 5,
         "class": "Polearm",
         "src": "staff-of-homa.png"
+    },
+    {
+        "name": "Freedom-Sworn",
+        "rating": 5,
+        "class": "Sword",
+        "src": "freedom-sworn.png"
+    },
+    {
+        "name": "Thundering Pulse",
+        "rating": 5,
+        "class": "Bow",
+        "src": "thundering-pulse.png"
+    },
+    {
+        "name": "Mistsplitter Reforged",
+        "rating": 5,
+        "class": "Sword",
+        "src": "mistsplitter-reforged.png"
+    },
+    {
+        "name": "Engulfing Lightning",
+        "rating": 5,
+        "class": "Polearm",
+        "src": "engulfing-lightning.png"
+    },
+    {
+        "name": "Everlasting Moonglow",
+        "rating": 5,
+        "class": "Catalyst",
+        "src": "everlasting-moonglow.png"
+    },
+    {
+        "name": "Wavebreaker's Fin",
+        "rating": 4,
+        "class": "Polearm",
+        "src": "wavebreaker's-fin.png"
+    },
+    {
+        "name": "Mouun's Moon",
+        "rating": 4,
+        "class": "Bow",
+        "src": "mouun's-moon.png"
     }
 ]

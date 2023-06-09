@@ -24,6 +24,22 @@
     "percentX": 62
   },
   {
+    "name": "Yanfei",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 4,
+    "id": "749031411358288396",
+    "percentX": 53
+  },
+  {
+    "name": "Eula",
+    "element": "Cryo",
+    "type": "character",
+    "rating": 5,
+    "id": "749131411358288396",
+    "percentX": 66
+  },
+  {
     "name": "Kaeya",
     "element": "Cryo",
     "type": "character",
@@ -46,6 +62,14 @@
     "rating": 5,
     "id": "749031368255602861",
     "percentX": 59
+  },
+  {
+    "name": "Rosaria",
+    "element": "Cryo",
+    "type": "character",
+    "rating": 4,
+    "id": "749031449864306720",
+    "percentX": 54
   },
   {
     "name": "Razor",
@@ -223,5 +247,69 @@
     "type": "character",
     "rating": 5,
     "percentX": 57
+  },
+  {
+    "name": "Kazuha",
+    "element": "Anemo",
+    "type": "character",
+    "rating": 5,
+    "id": "749031380706879922",
+    "percentX": 57
+  },
+  {
+    "name": "Ayaka",
+    "element": "Cryo",
+    "type": "character",
+    "rating": 5,
+    "id": "749031381706879922",
+    "percentX": 54
+  },
+  {
+    "name": "Yoimiya",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 5,
+    "id": "749031317492203611",
+    "percentX": 63
+  },
+  {
+    "name": "Sayu",
+    "element": "Anemo",
+    "type": "character",
+    "rating": 4,
+    "id": "749031317492223611",
+    "percentX": 52
+  },
+  {
+    "name": "Shogun",
+    "element": "Electro",
+    "type": "character",
+    "rating": 5,
+    "id": "749031317492203621",
+    "percentX": 61
+  },
+  {
+    "name": "Sara",
+    "element": "Electro",
+    "type": "character",
+    "rating": 4,
+    "id": "749031397492203621",
+    "percentX": 60
+  },
+  {
+    "name": "Kokomi",
+    "element": "Hydro",
+    "type": "character",
+    "rating": 5,
+    "id": "749011397492203621",
+    "percentX": 62
+  },
+  {
+    "name": "Thoma",
+    "element": "Pyro",
+    "type": "character",
+    "rating": 4,
+    "id": "149011397492203621",
+    "percentX": 50
   }
 ]

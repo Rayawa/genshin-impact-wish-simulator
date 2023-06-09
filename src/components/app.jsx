@@ -13,6 +13,17 @@ import AdriftInTheHarbor from '../models/adrift-in-the-harbor'
 import InvitationToMundaneLife from '../models/invitation-to-mundane-life'
 import DanceOfLanterns from '../models/dance-of-lanterns'
 import MomentOfBloom from '../models/moment-of-bloom'
+import BalladInGoblets2 from '../models/ballad-in-goblets-2'
+import FarewellOfSnezhnaya2 from '../models/farewell-of-snezhnaya-2'
+import GentryOfHermitage2 from '../models/gentry-of-hermitage-2'
+import BornOfOceanSwell from '../models/born-of-ocean-swell'
+import SparklingSteps2 from '../models/sparkling-steps-2'
+import LeavesInTheWind from '../models/leaves-in-the-wind'
+import TheHeronsCourt from '../models/the-herons-court'
+import TapestryOfGoldenFlames from '../models/tapestry-of-golden-flames'
+import ReignOfSerenity from '../models/reign-of-serenity'
+import DriftingLuminescence from '../models/drifting-luminescence'
+import MomentOfBloom2 from '../models/moment-of-bloom-2'
 import BeginnersWish from '../models/beginners-wish'
 import EpitomeInvocation from '../models/epitome-invocation'
 import WanderlustInvocation from '../models/wanderlust-invocation'
@@ -37,6 +48,17 @@ export default class App extends Component {
     this.epitomeInvocation = new EpitomeInvocation()
     this.wanderlustInvocation = new WanderlustInvocation()
     this.momentOfBloom = new MomentOfBloom()
+    this.balladInGoblets2 = new BalladInGoblets2()
+    this.farewellOfSnezhnaya2 = new FarewellOfSnezhnaya2()
+    this.gentryOfHermitage2 = new GentryOfHermitage2()
+    this.bornOfOceanSwell = new BornOfOceanSwell()
+    this.sparklingSteps2 = new SparklingSteps2()
+    this.leavesInTheWind = new LeavesInTheWind()
+    this.theHeronsCourt = new TheHeronsCourt()
+    this.tapestryOfGoldenFlames = new TapestryOfGoldenFlames()
+    this.reignOfSerenity = new ReignOfSerenity()
+    this.driftingLuminescence = new DriftingLuminescence()
+    this.momentOfBloom2 = new MomentOfBloom2()
     this.state = {
       view: 'banners',
       currentDetails: 'beginners-wish',
@@ -47,7 +69,7 @@ export default class App extends Component {
       wasDisclaimerSeen: false,
       isSettingsPageVisible: false,
       currentWishes: [],
-      selectedCharacterEventWish: 'moment-of-bloom',
+      selectedCharacterEventWish: 'moment-of-bloom-2',
       userWishes: {
         'beginners-wish': 0,
         'invitation-to-mundane-life': 0,
@@ -61,6 +83,17 @@ export default class App extends Component {
         'adrift-in-the-harbor': 0,
         'dance-of-lanterns': 0,
         'moment-of-bloom': 0,
+        'ballad-in-goblets-2': 0,
+        'farewell-of-snezhnaya-2': 0,
+        'gentry-of-hermitage-2': 0,
+        'born-of-ocean-swell': 0,
+        'sparkling-steps-2': 0,
+        'leaves-in-the-wind': 0,
+        'the-herons-court': 0,
+        'tapestry-of-golden-flames': 0,
+        'reign-of-serenity': 0,
+        'drifting-luminescence': 0,
+        'moment-of-bloom-2': 0,
       }
     }
   }
@@ -156,7 +189,18 @@ export default class App extends Component {
         'secretum-secretorum': this.secretumSecretorum.getState().attemptsCount,
         'adrift-in-the-harbor': this.adriftInTheHarbor.getState().attemptsCount,
         'dance-of-lanterns': this.danceOfLanterns.getState().attemptsCount,
-        'moment-of-bloom': this.momentOfBloom.getState().attemptsCount
+        'moment-of-bloom': this.momentOfBloom.getState().attemptsCount,
+        'ballad-in-goblets-2': this.balladInGoblets2.getState().attemptsCount,
+        'farewell-of-snezhnaya-2': this.farewellOfSnezhnaya2.getState().attemptsCount,
+        'gentry-of-hermitage-2': this.gentryOfHermitage2.getState().attemptsCount,
+        'born-of-ocean-swell': this.bornOfOceanSwell.getState().attemptsCount,
+        'sparkling-steps-2': this.sparklingSteps2.getState().attemptsCount,
+        'leaves-in-the-wind': this.leavesInTheWind.getState().attemptsCount,
+        'the-herons-court': this.theHeronsCourt.getState().attemptsCount,
+        'tapestry-of-golden-flames': this.tapestryOfGoldenFlames.getState().attemptsCount,
+        'reign-of-serenity': this.reignOfSerenity.getState().attemptsCount,
+        'drifting-luminescence': this.driftingLuminescence.getState().attemptsCount,
+        'moment-of-bloom-2': this.momentOfBloom2.getState().attemptsCount,
       }
     })
   }
@@ -173,6 +217,17 @@ export default class App extends Component {
     this.adriftInTheHarbor.reset()
     this.danceOfLanterns.reset()
     this.momentOfBloom.reset()
+    this.balladInGoblets2.reset()
+    this.farewellOfSnezhnaya2.reset()
+    this.gentryOfHermitage2.reset()
+    this.bornOfOceanSwell.reset()
+    this.sparklingSteps2.reset()
+    this.leavesInTheWind.reset()
+    this.theHeronsCourt.reset()
+    this.tapestryOfGoldenFlames.reset()
+    this.reignOfSerenity.reset()
+    this.driftingLuminescence.reset()
+    this.momentOfBloom2.reset()
     this.setState({
       isBeginnersWishLimited: false,
       isBeginnersWishOver10: false,
@@ -204,7 +259,18 @@ export default class App extends Component {
       secretumSecretorum: this.secretumSecretorum.getState(),
       adriftInTheHarbor: this.adriftInTheHarbor.getState(),
       danceOfLanterns: this.danceOfLanterns.getState(),
-      momentOfBloom: this.momentOfBloom.getState()
+      momentOfBloom: this.momentOfBloom.getState(),
+      balladInGoblets2: this.balladInGoblets2.getState(),
+      farewellOfSnezhnaya2: this.farewellOfSnezhnaya2.getState(),
+      gentryOfHermitage2: this.gentryOfHermitage2.getState(),
+      bornOfOceanSwell: this.bornOfOceanSwell.getState(),
+      sparklingSteps2: this.sparklingSteps2.getState(),
+      leavesInTheWind: this.leavesInTheWind.getState(),
+      theHeronsCourt: this.theHeronsCourt.getState(),
+      tapestryOfGoldenFlames: this.tapestryOfGoldenFlames.getState(),
+      reignOfSerenity: this.reignOfSerenity.getState(),
+      driftingLuminescence: this.driftingLuminescence.getState(),
+      momentOfBloom2: this.momentOfBloom2.getState(),
     }
     localStorage.setItem('data', JSON.stringify(data))
     this.syncWishCountersWithState()
@@ -231,6 +297,17 @@ export default class App extends Component {
       this.adriftInTheHarbor.attemptsCount = data.adriftInTheHarbor || 0
       this.danceOfLanterns.attemptsCount = data.danceOfLanterns || 0
       this.momentOfBloom.attemptsCount = data.momentOfBloom || 0
+      this.balladInGoblets2.attemptsCount = data.balladInGoblets2 || 0
+      this.farewellOfSnezhnaya2.attemptsCount = data.farewellOfSnezhnaya2 || 0
+      this.gentryOfHermitage2.attemptsCount = data.gentryOfHermitage2 || 0
+      this.bornOfOceanSwell.attemptsCount = data.bornOfOceanSwell || 0
+      this.sparklingSteps2.attemptsCount = data.sparklingSteps2 || 0
+      this.leavesInTheWind.attemptsCount = data.leavesInTheWind || 0
+      this.theHeronsCourt.attemptsCount = data.theHeronsCourt || 0
+      this.tapestryOfGoldenFlames.attemptsCount = data.tapestryOfGoldenFlames || 0
+      this.reignOfSerenity.attemptsCount = data.reignOfSerenity || 0
+      this.driftingLuminescence.attemptsCount = data.driftingLuminescence || 0
+      this.momentOfBloom2.attemptsCount = data.momentOfBloom2 || 0
       this.setState({
         isBeginnersWishLimited,
         isBeginnersWishOver10,
@@ -256,6 +333,17 @@ export default class App extends Component {
       this.adriftInTheHarbor.setState(data.adriftInTheHarbor)
       this.danceOfLanterns.setState(data.danceOfLanterns)
       this.momentOfBloom.setState(data.momentOfBloom)
+      this.balladInGoblets2.setState(data.balladInGoblets2)
+      this.farewellOfSnezhnaya2.setState(data.farewellOfSnezhnaya2)
+      this.gentryOfHermitage2.setState(data.gentryOfHermitage2)
+      this.bornOfOceanSwell.setState(data.bornOfOceanSwell)
+      this.sparklingSteps2.setState(data.sparklingSteps2)
+      this.leavesInTheWind.setState(data.leavesInTheWind)
+      this.theHeronsCourt.setState(data.theHeronsCourt)
+      this.tapestryOfGoldenFlames.setState(data.tapestryOfGoldenFlames)
+      this.reignOfSerenity.setState(data.reignOfSerenity)
+      this.driftingLuminescence.setState(data.driftingLuminescence)
+      this.momentOfBloom2.setState(data.momentOfBloom2)
       this.setState({
         isBeginnersWishLimited,
         isBeginnersWishOver10,
